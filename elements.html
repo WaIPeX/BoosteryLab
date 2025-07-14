@@ -93,7 +93,8 @@
     <p>Kontakt do koordynatora projektu (w trakcie tworzenia)</p>
 
     <form method="POST" action="https://formspree.io/f/xblkrqkw">
-      <input type="hidden" name="form-name" value="contact" />
+      <!-- Wyłącz CAPTCHA, by od razu przyjmować zgłoszenia -->
+      <input type="hidden" name="_captcha" value="false" />
 
       <div class="fields">
         <div class="field">
@@ -102,7 +103,7 @@
         </div>
         <div class="field">
           <label for="email">Email</label>
-          <input type="email" name="_replyto" id="email" required />
+          <input type="email" name="email" id="email" required />
         </div>
         <div class="field">
           <label for="message">Treść wiadomości</label>
@@ -120,18 +121,25 @@
         BoosteryLab<br />
         Aktualnie działamy <b>ZDALNIE</b><br />
       </li>
-      <li class="icon solid fa-envelope"><a target="_blank" href="#">E-Mail (zostanie dodany)</a></li>
-      <li class="icon brands fa-linkedin"><a target="_blank" href="https://www.linkedin.com/in/szpija/">Linkedin</a></li>
-      <li class="icon brands fa-facebook-f"><a target="_blank" href="#">Tu będzie link do przyszłego fanpage'a</a></li>
-      <li class="icon brands fa-github"><a target="_blank" href="https://github.com/BoosteryLab">Github</a></li>
+      <li class="icon solid fa-envelope">
+        <a target="_blank" href="#">E-Mail (zostanie dodany)</a>
+      </li>
+      <li class="icon brands fa-linkedin">
+        <a target="_blank" href="https://www.linkedin.com/in/szpija/">Linkedin</a>
+      </li>
+      <li class="icon brands fa-facebook-f">
+        <a target="_blank" href="#">Tu będzie link do przyszłego fanpage'a</a>
+      </li>
+      <li class="icon brands fa-github">
+        <a target="_blank" href="https://github.com/BoosteryLab">Github</a>
+      </li>
     </ul>
+
     <ul class="copyright">
-      <li>BoosteryLab</li><li>Design:HTML5 UP</li>
+      <li>BoosteryLab</li><li>Design: HTML5 UP</li>
     </ul>
   </div>
 </section>
-
-			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
